@@ -1,0 +1,6 @@
+[
+  {"Name": "Alice", "Age": "30", "City": "New York", "Salary": 85000, "Active": "true"},
+  {"Name": "Bob", "Age": "25", "City": "London", "Salary": 62000, "Active": "false"},
+  {"Name": "Carol", "Age": "41", "City": "Tokyo", "Salary": 98000, "Active": "true"},
+  {"Name": "Dave", "Age": "", "City": "Berlin", "Salary": "71000", "Active": "true"}
+]

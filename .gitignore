@@ -19,3 +19,5 @@ frontend/dist/
 __pycache__/
 *.pyc
 .env
+# Keep the example template tracked (only real .env is ignored)
+!.env.example

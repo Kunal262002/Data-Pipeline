@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: data-pipeline-api
+    runtime: python
+    rootDir: backend
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn app:app --bind 0.0.0.0:$PORT"
+    envVars:
+      - key: HOST
+        value: 0.0.0.0
+      - key: PORT
+        value: 10000
+      - key: DEBUG
+        value: false
+      - key: CORS_ORIGINS
+        value: "*"

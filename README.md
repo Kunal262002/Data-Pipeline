@@ -73,3 +73,14 @@ Open http://localhost:5173 in your browser. The Vite dev server proxies `/api` t
 
 ## Sample Data
 Ready-made samples live in `backend/sample_data/` (`data.json`, `data.xml`, `data.csv`) and can be pasted into the dashboard's ingest form.
+
+## Deploy Publicly (Free)
+This app can be published on the internet for free using **Render** (backend) + **Vercel/Netlify** (frontend).
+
+- 📄 Full step-by-step guide → **[DEPLOY.md](DEPLOY.md)**
+- Deployment configs already included:
+  - `render.yaml` + `backend/Procfile` (Render backend)
+  - `frontend/vercel.json` / `frontend/netlify.toml` (static hosting)
+  - Frontend reads `VITE_API_URL` env var at build time to talk to the deployed backend.
+
+**Quick summary:** push to GitHub → deploy `backend/` on Render → deploy `frontend/` on Vercel/Netlify with `VITE_API_URL` set to your Render backend URL.
